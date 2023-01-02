@@ -41,7 +41,7 @@ public class Parser {
    * @throws RuntimeException if there's a problem reading the file from the classpath
    */
   public Parser() {
-    try (InputStream is = Parser.class.getResourceAsStream(REGEX_YAML_PATH)) {
+        try (InputStream is = Parser.class.getClassLoader().getResourceAsStream(REGEX_YAML_PATH)) {
       initialize(is);
     } catch (IOException e) {
       throw new RuntimeException("failed to initialize parser from regexes.yaml bundled in jar", e);
