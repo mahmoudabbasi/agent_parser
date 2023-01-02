@@ -54,7 +54,8 @@ user_agent_parsers:
   - regex: '(MusicDownloader)Lite/(\d+)\.(\d+)\.(\d+) CFNetwork'
   - regex: '^(.{0,200})-iPad\/(\d+)(?:\.(\d+)|)(?:\.(\d+)|)(?:\.(\d+)|) CFNetwork'
   - regex: '^(.{0,200})-iPhone/(\d+)(?:\.(\d+)|)(?:\.(\d+)|)(?:\.(\d+)|) CFNetwork'
-  - regex: '^(.{0,200})/(\d+)(?:\.(\d+)|)(?:\.(\d+)|)(?:\.(\d+)|) CFNetwork'
+  - regex: '^(CxpMobileiOS)/(HamrahBaam)/(\S+) (\S+) (\S+)/(\S+) CFNetwork'
+#  - regex: '^(.{0,200})/(\d+)(?:\.(\d+)|)(?:\.(\d+)|)(?:\.(\d+)|) CFNetwork'
 
   # Podcast catchers
   - regex: '^(Luminary)/(\d+)(?:\.(\d+)|)(?:\.(\d+)|)'
