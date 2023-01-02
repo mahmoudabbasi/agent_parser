@@ -1,2 +1,3 @@
 # agent_parser
-I used from ua-Parser project so I extended for custom needed  
+I used from ua-parser project 
+so I extended for custom needed  
