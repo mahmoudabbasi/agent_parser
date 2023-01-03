@@ -5806,9 +5806,6 @@ device_parsers:
     model_replacement: 'Mac'
 
 custom_parsers:
-#  - regex: '(.+)\('
   - regex: '(.*?)\s*\(|\)(.*)'
-
-
-
 #  - regex: '(.*?)\s*\(|\)\s+(.*)'
+#  - regex: '(.+)\('
