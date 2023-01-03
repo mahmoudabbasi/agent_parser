@@ -56,4 +56,8 @@ public class Device {
     return String.format("{\"family\": %s}",
                          family == null ? Constants.EMPTY_STRING : '"' + family + '"');
   }
+
+
+
+
 }

@@ -26,10 +26,14 @@ public class Client {
   public final OS os;
   public final Device device;
 
-  public Client(UserAgent userAgent, OS os, Device device) {
+  public final CustomAgent customAgent;
+
+
+  public Client(UserAgent userAgent, OS os, Device device , CustomAgent customAgent) {
     this.userAgent = userAgent;
     this.os = os;
     this.device = device;
+    this.customAgent = customAgent;
   }
 
   @Override
@@ -40,7 +44,8 @@ public class Client {
     Client o = (Client) other;
     return ((this.userAgent != null && this.userAgent.equals(o.userAgent)) || this.userAgent == o.userAgent) &&
            ((this.os != null && this.os.equals(o.os)) || this.os == o.os) &&
-           ((this.device != null && this.device.equals(o.device)) || this.device == o.device);
+           ((this.device != null && this.device.equals(o.device)) || this.device == o.device) &&
+           ((this.customAgent != null && this.customAgent.equals(o.customAgent)) || this.customAgent == o.customAgent);
   }
 
   @Override
@@ -48,12 +53,13 @@ public class Client {
     int h = userAgent == null ? 0 : userAgent.hashCode();
     h += os == null ? 0 : os.hashCode();
     h += device == null ? 0 : device.hashCode();
+    h += customAgent == null ? 0 : customAgent.hashCode();
     return h;
   }
 
   @Override
   public String toString() {
-    return String.format("{\"user_agent\": %s, \"os\": %s, \"device\": %s}",
-                         userAgent, os, device);
+    return String.format("{\"user_agent\": %s, \"os\": %s, \"device\": %s, \"custom\": %s}",
+                         userAgent, os, device, customAgent);
   }
 }

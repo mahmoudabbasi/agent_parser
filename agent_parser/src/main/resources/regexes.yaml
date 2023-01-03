@@ -5805,3 +5805,6 @@ device_parsers:
     device_replacement: 'Mac'
     brand_replacement: 'Apple'
     model_replacement: 'Mac'
+
+custom_parsers:
+  - regex: '(.*?)\s*\(|\)\s+(.*)'

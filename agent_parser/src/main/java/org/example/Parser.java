@@ -36,6 +36,8 @@ public class Parser {
   private OSParser osParser;
   private DeviceParser deviceParser;
 
+  private CustomAgentParser customAgentParser;
+
   /**
    * Creates a parser using the regular expression yaml file bundled in the jar.
    * @throws RuntimeException if there's a problem reading the file from the classpath
@@ -61,12 +63,20 @@ public class Parser {
     UserAgent ua = parseUserAgent(agentString);
     OS os = parseOS(agentString);
     Device device = deviceParser.parse(agentString);
-    return new Client(ua, os, device);
+    CustomAgent customAgent1 = parseCustomAgent(agentString);
+
+    return new Client(ua, os, device, customAgent1);
   }
 
   public UserAgent parseUserAgent(String agentString) {
     return uaParser.parse(agentString);
   }
+
+
+  public CustomAgent parseCustomAgent(String agentString) {
+    return customAgentParser.parse(agentString);
+  }
+
 
   public Device parseDevice(String agentString) {
     return deviceParser.parse(agentString);
@@ -99,5 +109,14 @@ public class Parser {
       throw new IllegalArgumentException("device_parsers is missing from yaml");
     }
     deviceParser = DeviceParser.fromList(deviceParserConfigs);
+
+
+    List<Map<String,String>> customParserConfigs = regexConfig.get("custom_parsers");
+    if (customParserConfigs == null) {
+      throw new IllegalArgumentException("custom_parsers is missing from yaml");
+    }
+    customAgentParser = CustomAgentParser.fromList(customParserConfigs);
+
+
   }
 }
