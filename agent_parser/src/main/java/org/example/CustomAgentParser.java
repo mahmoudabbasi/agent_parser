@@ -68,8 +68,6 @@ public class CustomAgentParser {
 
             Matcher matcher = pattern.matcher(agentString);
 
-            //matcher.lookingAt();
-
             Integer cnt = matcher.groupCount();
 
             List<String> list = new ArrayList<>();

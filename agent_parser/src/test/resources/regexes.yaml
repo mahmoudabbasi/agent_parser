@@ -5806,6 +5806,7 @@ device_parsers:
     model_replacement: 'Mac'
 
 custom_parsers:
-  - regex: '(.*?)\s*\(|\)(.*)'
+  - regex: 'CustomerDefine1/(.*?)\(|\)(.*) CustomerDefine2/(.*)'
+  - regex: '(.*?)/(.*?)/(.*) iP'
 #  - regex: '(.*?)\s*\(|\)\s+(.*)'
 #  - regex: '(.+)\('
