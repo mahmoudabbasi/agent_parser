@@ -23,7 +23,7 @@ public class CustomAgentParser {
      * @param configList configure a user-agent parser from a list of regexp hashmaps
      * @return user-agent parser
      */
-    public static CustomAgentParser fromList(List<Map<String,String>> configList) {
+    public static CustomAgentParser fromList(List<Map<String, String>> configList) {
         List<CUPattern> configPatterns = new ArrayList<>();
 
         for (Map<String, String> configMap : configList) {
@@ -37,7 +37,6 @@ public class CustomAgentParser {
             return null;
         }
 
-        CustomAgent agent;
         for (CUPattern p : patterns) {
             CustomAgent match = p.match(agentString);
             if (match != null) {
@@ -53,7 +52,7 @@ public class CustomAgentParser {
             throw new IllegalArgumentException("User agent is missing regex");
         }
 
-        return(new CUPattern(Pattern.compile(regex)));
+        return (new CUPattern(Pattern.compile(regex)));
     }
 
     protected static class CUPattern {
