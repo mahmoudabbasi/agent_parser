@@ -19,13 +19,6 @@
   </properties>
 
 
-    <scm>
-      <connection>scm:git:git://github.com/mahmoudabbasi/agent_parser.git</connection>
-      <developerConnection>scm:git:ssh://github.com:agent_parser.git</developerConnection>
-      <url>http://github.com/agent_parser/tree/master</url>
-    </scm>
-
-
   <build>
     <plugins>
       <plugin>
