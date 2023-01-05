@@ -15,8 +15,8 @@ CustomerDefine3/CustomerDefine4/3.2.3 iPhone10,3 iOS/16.2 CFNetwork/1402.0.8 Dar
 CustomerDefine1/1.1.1 (Linux; U; Android 11; Redmi Note 8T Build/RKQ1.201004.002) CustomerDefine2/3.8.2.147
 CustomerDefine1/1.1.1 (Linux; U; Android 11; 2201116PG Build/RKQ1.211001.001) CustomerDefine2/1.1.1.1
 CustomerDefine1/1.1.1 (Linux; U; Android 5.1.1; STV100-4 Build/LMY47V) CustomerDefine2/1.1.1.1
-CustomerDefine3/CustomerDefine4/3.2.3 iPhone14,2 iOS/15.2.1 CFNetwork/1327.0.4 Darwin/2.2.2
-CustomerDefine3/CustomerDefine4/3.2.3 iPhone12,3 iOS/16.1.1 CFNetwork/1399 Darwin/2.2.2
+CustomerDefine3/CustomerDefine4/3.2.3/001 iPhone10,2 iOS/1 CFNetwork/1327.0.4 Darwin/2.2.2
+CustomerDefine3/CustomerDefine4/3.2.3/002 iPhone10,3 iOS/1 CFNetwork/1399 Darwin/2.2.2
 CustomerDefine1/1.1.1 (Linux; U; Android 9; JAT-L29 Build/HUAWEIJAT-L29) CustomerDefine2/1.1.1.1
 Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)
 Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
